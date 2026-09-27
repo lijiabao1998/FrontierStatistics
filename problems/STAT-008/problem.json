@@ -1,0 +1,27 @@
+{
+  "id": "STAT-008",
+  "domain": "statistics",
+  "title": "Distribution shift 下 calibration",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "預測概率在 deployment population 與 development population 不同時，如何檢測 calibration drift 並修正而不依賴完整 target labels。",
+  "known_result": "distribution shift 可破壞原有 calibration/coverage；現有 weighting、online adaptation 和 structural assumptions 僅覆蓋部分情況。",
+  "open_gap": "label-scarce target、subgroup drift、conditional calibration 的可診斷性。",
+  "first_task": "合成 binary classifier logits，施加 covariate/label/conditional shifts；比較 temperature scaling、importance weighting、no-update。",
+  "evaluator": "ECE/Brier/log loss/subgroup calibration + label budget。",
+  "validation_limits": "ECE 單一數字不保證 decision-relevant calibration；少量 labels 的 reuse 要記。",
+  "completion_criterion": "在預註冊 shift family 和 label budget 下穩定改善 target calibration 且不惡化 coverage。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。新輪次必須重新檢索並閱讀原始來源。",
+  "screening_queries": [
+    "calibration distribution shift uncertainty statistics"
+  ],
+  "sources": [
+    {
+      "title": "Multi-Source Conformal Inference Under Distribution Shift",
+      "url": "https://arxiv.org/abs/2405.09331",
+      "kind": "primary",
+      "supports": "shift 下 target uncertainty 與 calibration 相關框架"
+    }
+  ]
+}

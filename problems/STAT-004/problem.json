@@ -1,0 +1,27 @@
+{
+  "id": "STAT-004",
+  "domain": "statistics",
+  "title": "Multi-source / target transportability",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "多個來源族群有偏、target 樣本少或 outcome 缺失時，如何選擇有用來源並對 target estimand 保持有效推論。",
+  "known_result": "multi-source conformal / transport frameworks 能用 influence-function 或 weighted approaches 借力來源，但 source informativeness 與 invariance 失效是核心問題。",
+  "open_gap": "來源選擇、conditional invariance violation、privacy restrictions 下的 bias-efficiency tradeoff。",
+  "first_task": "合成3 source + 1 target，控制一個 source 逐漸失效；比較 pool-all、target-only、adaptive-weight。",
+  "evaluator": "target coverage/bias/RMSE、source weights、有效樣本量。",
+  "validation_limits": "oracle 知道哪個 source 有效會高估可用性。",
+  "completion_criterion": "在預先定義 source shift family 下自適應選源仍維持 target error control。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。新輪次必須重新檢索並閱讀原始來源。",
+  "screening_queries": [
+    "multi source conformal inference distribution shift"
+  ],
+  "sources": [
+    {
+      "title": "Multi-Source Conformal Inference Under Distribution Shift",
+      "url": "https://arxiv.org/abs/2405.09331",
+      "kind": "primary",
+      "supports": "多來源偏移下 target inference 與 source weighting"
+    }
+  ]
+}

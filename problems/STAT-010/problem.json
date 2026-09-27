@@ -1,0 +1,27 @@
+{
+  "id": "STAT-010",
+  "domain": "statistics",
+  "title": "Model selection / benchmark selection 後推論有效性",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "當研究者在多模型、多指標、多資料切分中選最好結果後，如何對最終 claim 給有效 uncertainty，而不是把 selection 當不存在。",
+  "known_result": "selective inference literature 已處理多種 post-selection settings，但現代 benchmark/model-development loop 更複雜且 adaptive。",
+  "open_gap": "adaptive search history、leaderboard reuse、human-in-loop selection 下的有效 inference。",
+  "first_task": "模擬100 candidate models with noise，展示 winner's curse；比較 holdout、nested selection、selective correction。",
+  "evaluator": "selected effect bias、coverage、rank stability、holdout exhaustion。",
+  "validation_limits": "一次 hidden test 也可能因反覆 leaderboard feedback 間接過擬合。",
+  "completion_criterion": "對凍結 search protocol 給可審計 uncertainty/control，並在 held-out benchmark 驗證。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。新輪次必須重新檢索並閱讀原始來源。",
+  "screening_queries": [
+    "selective inference adaptive model selection benchmark statistics"
+  ],
+  "sources": [
+    {
+      "title": "Conformalized Large-Scale Selective Inference with Informative and Trustworthy Prediction Sets",
+      "url": "https://arxiv.org/abs/2605.27012",
+      "kind": "primary",
+      "supports": "selection 後 error control 的近期框架"
+    }
+  ]
+}

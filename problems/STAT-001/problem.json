@@ -1,0 +1,27 @@
+{
+  "id": "STAT-001",
+  "domain": "statistics",
+  "title": "Distribution shift 下的 conformal coverage",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "當 calibration 與 target population 發生 covariate 或 conditional shift 時，建立可量化 coverage loss、可校準且不過度寬的 prediction sets。",
+  "known_result": "現有 weighted / structural conformal 方法可處理部分 shift，但 conditional shift 下 distribution-free marginal guarantee 會失效或需額外結構。",
+  "open_gap": "未知或錯配 shift mechanism 下如何同時維持 coverage、效率與可診斷性。",
+  "first_task": "用合成 location/covariate/conditional shift 重現 vanilla conformal failure，再測一個 weighted/structural baseline。",
+  "evaluator": "empirical coverage、interval size、coverage gap 的置信區間；shift strength sweep。",
+  "validation_limits": "平均 coverage 可掩蓋 subgroup failure；知道 density ratio 的 oracle 不能當可部署結果。",
+  "completion_criterion": "在凍結 shift family 與可觀測資訊下，給有限樣本或明確 asymptotic coverage guarantee 並外部重現。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。新輪次必須重新檢索並閱讀原始來源。",
+  "screening_queries": [
+    "robust conformal prediction distribution shift"
+  ],
+  "sources": [
+    {
+      "title": "Robust Conformal Prediction under Distribution Shift via Physics-Informed Structural Causal Model",
+      "url": "https://arxiv.org/abs/2403.15025",
+      "kind": "primary",
+      "supports": "conditional shift 下 coverage failure 與結構化修正"
+    }
+  ]
+}

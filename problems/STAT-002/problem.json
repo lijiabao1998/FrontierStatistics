@@ -1,0 +1,27 @@
+{
+  "id": "STAT-002",
+  "domain": "statistics",
+  "title": "Selective inference 與 FCR/FDR control",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "只回報最有資訊的 prediction sets 或 test units 時，如何在選擇後仍控制 false coverage / false discovery，並保持 power。",
+  "known_result": "2026 SCIP 結合 generalized conformal p-values 與 informative selection，處理 large-scale selective prediction。",
+  "open_gap": "依賴、shift、資料自適應 selection 下的 finite-sample validity 與效率。",
+  "first_task": "重現簡單 iid Gaussian simulation，再加入 selection severity 和 dependence；對比 naive post-selection。",
+  "evaluator": "FCR/FDR、power、set width、Monte Carlo SE。",
+  "validation_limits": "在已知 exchangeability 下有效不等於 arbitrary shift 下有效。",
+  "completion_criterion": "明列 selection/shift mechanism 下的可檢查 error control，並跨多個 DGP 重現。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。新輪次必須重新檢索並閱讀原始來源。",
+  "screening_queries": [
+    "selective conformal inference false coverage rate 2026"
+  ],
+  "sources": [
+    {
+      "title": "Conformalized Large-Scale Selective Inference with Informative and Trustworthy Prediction Sets",
+      "url": "https://arxiv.org/abs/2605.27012",
+      "kind": "primary",
+      "supports": "selective prediction 與 FCR control"
+    }
+  ]
+}

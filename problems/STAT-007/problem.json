@@ -1,0 +1,27 @@
+{
+  "id": "STAT-007",
+  "domain": "statistics",
+  "title": "強依賴多重檢定的 FDR control",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "在 tests 強相關、dependence structure 未知或可估時，如何同時控制 FDR 並避免過度保守。",
+  "known_result": "經典 BH 在特定 dependence 下有保證；現代 selective/conformal p-values 可產生更複雜依賴，使傳統程序未必可直接套用。",
+  "open_gap": "unknown/adversarial dependence、finite-sample calibration 與 power。",
+  "first_task": "生成 block/correlated Gaussian null+signal，對比 BH、BY、knockoff/conformal-style procedures，做 dependence sweep。",
+  "evaluator": "FDR、FWER、power、Monte Carlo uncertainty。",
+  "validation_limits": "平均FDR控制不能保證每個 dependence family；simulation tuning不可看真值後挑方法。",
+  "completion_criterion": "在明列 dependence class 下有嚴格/可重現 FDR control 並量化 power。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。新輪次必須重新檢索並閱讀原始來源。",
+  "screening_queries": [
+    "weighted conformal p values false discovery dependence"
+  ],
+  "sources": [
+    {
+      "title": "Model-free selective inference under covariate shift via weighted conformal p-values",
+      "url": "https://arxiv.org/abs/2307.09291",
+      "kind": "primary",
+      "supports": "conformal p-values 依賴與 FDR 控制問題"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "STAT-009",
+  "domain": "statistics",
+  "title": "Nonstationary time-series forecast uncertainty",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "概念漂移、seasonality change、regime shift 下，如何同時維持 forecast accuracy 與 prediction interval coverage。",
+  "known_result": "global forecasting models 在 nonstationarity 下可能缺乏內生 adaptation；concept drift 方法提供部分解法。",
+  "open_gap": "shift detection delay、online recalibration、long-horizon joint coverage。",
+  "first_task": "建立 piecewise AR/seasonal DGP，凍結 pre/post shift，對比 ETS、global model、online recalibration。",
+  "evaluator": "rolling coverage、width、MAE、detection delay、false alarms。",
+  "validation_limits": "看見 shift point 後回頭調整方法會導致 hindsight bias。",
+  "completion_criterion": "在未知 change time 的 held-out series 上維持預先設定 coverage 並控制延遲與寬度。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。新輪次必須重新檢索並閱讀原始來源。",
+  "screening_queries": [
+    "concept drift global time series forecasting uncertainty"
+  ],
+  "sources": [
+    {
+      "title": "Handling Concept Drift in Global Time Series",
+      "url": "https://arxiv.org/abs/2304.01512",
+      "kind": "primary",
+      "supports": "global forecasting 在 concept drift 下的挑戰"
+    }
+  ]
+}

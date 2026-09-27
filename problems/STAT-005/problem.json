@@ -1,0 +1,27 @@
+{
+  "id": "STAT-005",
+  "domain": "statistics",
+  "title": "MNAR missingness 的可識別性與敏感性",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "當 missingness 依賴未觀測 outcome 時，哪些 estimands 可由 observed data + 明示 assumptions 識別，哪些只能做 sensitivity bounds。",
+  "known_result": "MNAR 是經典 non-identifiability 場景；本庫把問題限定為可模擬的 selection/pattern-mixture families，而不是假設一個 universal solution。",
+  "open_gap": "如何把 unverifiable assumptions 轉成可審核 sensitivity parameter 與 partial identification。",
+  "first_task": "建立 logistic selection MNAR simulation，證明兩個 latent models 可生成近似 observed data；比較 point-identification 假設與 bounds。",
+  "evaluator": "truth coverage、identified-set width、assumption sensitivity。",
+  "validation_limits": "真實資料不能從自身證明 MNAR mechanism；點估計漂亮不代表被識別。",
+  "completion_criterion": "對限定 missingness model 給出可驗證 identified set/estimator 並明列不可識別區域。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。新輪次必須重新檢索並閱讀原始來源。",
+  "screening_queries": [
+    "missing not at random identification sensitivity analysis statistics"
+  ],
+  "sources": [
+    {
+      "title": "Missing Data: Our View of the State of the Art",
+      "url": "https://doi.org/10.1214/07-STS239",
+      "kind": "primary",
+      "supports": "MNAR 與 unverifiable missingness assumptions 的基礎識別框架"
+    }
+  ]
+}

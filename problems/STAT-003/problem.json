@@ -1,0 +1,27 @@
+{
+  "id": "STAT-003",
+  "domain": "statistics",
+  "title": "Network interference 下的因果識別",
+  "status": "OPEN",
+  "priority": "B",
+  "checked_on": "2026-09-28",
+  "statement": "當一個單位 treatment 影響鄰居 outcomes 時，如何在 network 未完全已知或 network itself random 的情況下識別與估計 direct/spillover effects。",
+  "known_result": "2025 review 系統整理 fixed/random networks、設計與 estimation，並列出 generalizability 等 open problems；2026 線性模型工作給部分可識別情況。",
+  "open_gap": "未知 interference graph、long-range spillovers 與跨 network transport。",
+  "first_task": "生成已知真值 network experiment，比 SUTVA-naive 與 interference-aware estimator；逐步抹掉 network edges。",
+  "evaluator": "bias、coverage、variance、network misspecification sensitivity。",
+  "validation_limits": "結果依 exposure mapping；network measurement error 不能忽略。",
+  "completion_criterion": "在凍結 network/assignment assumptions 下有正確 coverage 且對有限 misspecification 有明示界線。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。新輪次必須重新檢索並閱讀原始來源。",
+  "screening_queries": [
+    "causal inference network interference open problems"
+  ],
+  "sources": [
+    {
+      "title": "Causal Inference Under Network Interference",
+      "url": "https://arxiv.org/abs/2508.06808",
+      "kind": "primary",
+      "supports": "network interference 的設計、識別與 open problems"
+    }
+  ]
+}

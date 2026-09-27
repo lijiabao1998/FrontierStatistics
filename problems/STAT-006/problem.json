@@ -1,0 +1,27 @@
+{
+  "id": "STAT-006",
+  "domain": "statistics",
+  "title": "高維 nuisance + ML 的有效推論",
+  "status": "OPEN",
+  "priority": "A",
+  "checked_on": "2026-09-28",
+  "statement": "當 propensity/outcome/density nuisance 由高容量 ML 估計時，如何在 finite samples 保持 target parameter coverage 並避免 regularization bias。",
+  "known_result": "double/debiased ML 與 influence-function 方法提供 orthogonalization + cross-fitting 的一般框架，但 finite-sample、weak overlap、adaptive tuning 仍會影響實際 coverage。",
+  "open_gap": "高維、weak overlap、nonregular targets 下何時 asymptotic theory 失真。",
+  "first_task": "合成 ATE DGP，逐步減弱 overlap；對比 naive plug-in、cross-fit orthogonal estimator 和 oracle nuisance。",
+  "evaluator": "bias、coverage、CI width、nuisance error、overlap diagnostics。",
+  "validation_limits": "nuisance predictive accuracy 高不保證 target inference 有效。",
+  "completion_criterion": "在指定 complexity/overlap class 下給有效 error control 或可靠 failure diagnostics。",
+  "screening_note": "2026-09-28 初始有界文獻篩查；不是完整全網未解證明。新輪次必須重新檢索並閱讀原始來源。",
+  "screening_queries": [
+    "double machine learning semiparametric inference high dimensional"
+  ],
+  "sources": [
+    {
+      "title": "Double/Debiased Machine Learning for Treatment and Structural Parameters",
+      "url": "https://doi.org/10.1111/ectj.12097",
+      "kind": "primary",
+      "supports": "orthogonal scores、cross-fitting 與 ML nuisance inference 基礎"
+    }
+  ]
+}
