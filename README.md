@@ -17,4 +17,4 @@
 | STAT-009 | Nonstationary time-series forecast uncertainty | B |
 | STAT-010 | Benchmark/model selection 後推論有效性 | B |
 
-每輪依治理 091d6a26a4af8522683711483f2b97afd90efa7f 做 fresh search、凍結 estimand/assumptions/evaluator，再進實驗。OPEN 只是初始篩查狀態。
+每輪依治理 f40beb161b6c87201d8082ecbc29c7e0b3eaa402 做 fresh search、凍結 estimand/assumptions/evaluator，再進實驗。OPEN 只是初始篩查狀態。
