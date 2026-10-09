@@ -1,0 +1,270 @@
+test_bad_id_rejected (test_frontier.GateTests.test_bad_id_rejected) ... ok
+test_duplicate_sources_rejected (test_frontier.GateTests.test_duplicate_sources_rejected) ... ok
+test_extended_problem_prefixes_accepted (test_frontier.GateTests.test_extended_problem_prefixes_accepted) ... ok
+test_external_completion_is_recorded (test_frontier.GateTests.test_external_completion_is_recorded) ... ok
+test_incomplete_repo_rejected (test_frontier.GateTests.test_incomplete_repo_rejected) ... ok
+test_main_rejected (test_frontier.GateTests.test_main_rejected) ... ok
+test_missing_criticism_rejected (test_frontier.GateTests.test_missing_criticism_rejected) ... ok
+test_missing_each_check_rejected (test_frontier.GateTests.test_missing_each_check_rejected) ... ok
+test_no_primary_rejected (test_frontier.GateTests.test_no_primary_rejected) ... ok
+test_prior_round_search_rejected (test_frontier.GateTests.test_prior_round_search_rejected) ... ok
+test_resolution_claim_pauses_not_completes (test_frontier.GateTests.test_resolution_claim_pauses_not_completes) ... ok
+test_stale_search_rejected (test_frontier.GateTests.test_stale_search_rejected) ... ok
+test_subcase_does_not_close_parent (test_frontier.GateTests.test_subcase_does_not_close_parent) ... ok
+test_unbounded_budget_rejected (test_frontier.GateTests.test_unbounded_budget_rejected) ... ok
+test_unsupported_completion_rejected (test_frontier.GateTests.test_unsupported_completion_rejected) ... ok
+test_valid_fixture (test_frontier.GateTests.test_valid_fixture) ... ok
+test_boundary_sibling_prefix_is_not_inside_root (test_gate_hardening.ArtifactRootTests.test_boundary_sibling_prefix_is_not_inside_root) ... ok
+test_green_fixing_invalid_base_root (test_gate_hardening.ArtifactRootTests.test_green_fixing_invalid_base_root) ... ok
+test_green_proof_in_root_with_round (test_gate_hardening.ArtifactRootTests.test_green_proof_in_root_with_round) ... ok
+test_green_root_declaration_alone (test_gate_hardening.ArtifactRootTests.test_green_root_declaration_alone) ... ok
+test_red_deleting_root_artifact_needs_round (test_gate_hardening.ArtifactRootTests.test_red_deleting_root_artifact_needs_round) ... ok
+test_red_files_under_invalid_base_root_are_unregistered (test_gate_hardening.ArtifactRootTests.test_red_files_under_invalid_base_root_are_unregistered) ... ok
+test_red_invalid_root_declarations (test_gate_hardening.ArtifactRootTests.test_red_invalid_root_declarations) ... ok
+test_red_invalid_root_still_blocks_other_changes (test_gate_hardening.ArtifactRootTests.test_red_invalid_root_still_blocks_other_changes) ... ok
+test_red_proof_in_root_with_other_problem_round (test_gate_hardening.ArtifactRootTests.test_red_proof_in_root_with_other_problem_round) ... ok
+test_red_proof_in_root_without_round (test_gate_hardening.ArtifactRootTests.test_red_proof_in_root_without_round) ... ok
+test_red_removed_root_leaves_unregistered_files (test_gate_hardening.ArtifactRootTests.test_red_removed_root_leaves_unregistered_files) ... ok
+test_red_root_declared_in_same_change_as_proof (test_gate_hardening.ArtifactRootTests.test_red_root_declared_in_same_change_as_proof) ... ok
+test_validate_tree_root_artifact (test_gate_hardening.ArtifactRootTests.test_validate_tree_root_artifact) ... ok
+test_decide_cli_refuses_moving_to_claimed_resolved (test_gate_hardening.DecideCommandTests.test_decide_cli_refuses_moving_to_claimed_resolved) ... ok
+test_decide_cli_writes_claimed_resolved_resolution_fix (test_gate_hardening.DecideCommandTests.test_decide_cli_writes_claimed_resolved_resolution_fix) ... ok
+test_decide_refuses_unauthorized_field (test_gate_hardening.DecideCommandTests.test_decide_refuses_unauthorized_field) ... ok
+test_decide_writes_valid_record_and_passes (test_gate_hardening.DecideCommandTests.test_decide_writes_valid_record_and_passes) ... ok
+test_red_check_diff_domain_change_between_research_domains (test_gate_hardening.DomainIdentityTests.test_red_check_diff_domain_change_between_research_domains) ... ok
+test_red_check_diff_domain_flip_to_governance (test_gate_hardening.DomainIdentityTests.test_red_check_diff_domain_flip_to_governance) ... ok
+test_red_governance_domain_when_merge_base_has_no_lab_json (test_gate_hardening.DomainIdentityTests.test_red_governance_domain_when_merge_base_has_no_lab_json) ... ok
+test_red_validate_research_repo_declaring_governance (test_gate_hardening.DomainIdentityTests.test_red_validate_research_repo_declaring_governance) ... ok
+test_governance_repo_skips_research_contract (test_gate_hardening.GovernanceRepoTests.test_governance_repo_skips_research_contract) ... ok
+test_green_math_lean_infrastructure (test_gate_hardening.MathPathTests.test_green_math_lean_infrastructure) ... ok
+test_red_math_infra_is_domain_scoped (test_gate_hardening.MathPathTests.test_red_math_infra_is_domain_scoped) ... ok
+test_red_new_lean_file_outside_problem (test_gate_hardening.MathPathTests.test_red_new_lean_file_outside_problem) ... ok
+test_boundary_case_and_id_variants_are_unregistered (test_gate_hardening.PathContractTests.test_boundary_case_and_id_variants_are_unregistered) ... ok
+test_boundary_deleting_legacy_unregistered_file_is_allowed (test_gate_hardening.PathContractTests.test_boundary_deleting_legacy_unregistered_file_is_allowed) ... ok
+test_green_docs_and_ci_hygiene_need_no_round (test_gate_hardening.PathContractTests.test_green_docs_and_ci_hygiene_need_no_round) ... ok
+test_green_merged_draft_round_admitted_later (test_gate_hardening.PathContractTests.test_green_merged_draft_round_admitted_later) ... ok
+test_green_merged_round_finished_later (test_gate_hardening.PathContractTests.test_green_merged_round_finished_later) ... ok
+test_green_results_with_round (test_gate_hardening.PathContractTests.test_green_results_with_round) ... ok
+test_green_round_attachment_with_admitted_round (test_gate_hardening.PathContractTests.test_green_round_attachment_with_admitted_round) ... ok
+test_green_validate_blocked_round_keeps_its_attachments (test_gate_hardening.PathContractTests.test_green_validate_blocked_round_keeps_its_attachments) ... ok
+test_green_validate_with_admitted_round (test_gate_hardening.PathContractTests.test_green_validate_with_admitted_round) ... ok
+test_red_attachment_added_to_old_round (test_gate_hardening.PathContractTests.test_red_attachment_added_to_old_round) ... ok
+test_red_finished_round_reopened_or_reused (test_gate_hardening.PathContractTests.test_red_finished_round_reopened_or_reused) ... ok
+test_red_merged_round_rewritten (test_gate_hardening.PathContractTests.test_red_merged_round_rewritten) ... ok
+test_red_move_results_out_and_rename_extension (test_gate_hardening.PathContractTests.test_red_move_results_out_and_rename_extension) ... ok
+test_red_results_covered_only_by_other_problem (test_gate_hardening.PathContractTests.test_red_results_covered_only_by_other_problem) ... ok
+test_red_results_without_round (test_gate_hardening.PathContractTests.test_red_results_without_round) ... ok
+test_red_round_attachment_with_draft_round (test_gate_hardening.PathContractTests.test_red_round_attachment_with_draft_round) ... ok
+test_red_round_record_deleted (test_gate_hardening.PathContractTests.test_red_round_record_deleted) ... ok
+test_red_unregistered_result_dir_under_problem (test_gate_hardening.PathContractTests.test_red_unregistered_result_dir_under_problem) ... ok
+test_red_unregistered_top_level_dirs (test_gate_hardening.PathContractTests.test_red_unregistered_top_level_dirs) ... ok
+test_red_validate_blocked_round_does_not_cover_artifacts (test_gate_hardening.PathContractTests.test_red_validate_blocked_round_does_not_cover_artifacts) ... ok
+test_red_validate_catches_artifact_without_round (test_gate_hardening.PathContractTests.test_red_validate_catches_artifact_without_round) ... ok
+test_red_validate_catches_unregistered_tracked_file (test_gate_hardening.PathContractTests.test_red_validate_catches_unregistered_tracked_file) ... ok
+test_boundary_block_scalar_body_is_indented_from_the_key (test_gate_hardening.PinContractTests.test_boundary_block_scalar_body_is_indented_from_the_key) ... ok
+test_boundary_block_scalar_ends_at_dedent (test_gate_hardening.PinContractTests.test_boundary_block_scalar_ends_at_dedent) ... ok
+test_boundary_marker_form (test_gate_hardening.PinContractTests.test_boundary_marker_form) ... ok
+test_boundary_prose_short_prefix_must_match (test_gate_hardening.PinContractTests.test_boundary_prose_short_prefix_must_match) ... ok
+test_boundary_unrelated_shas_are_ignored (test_gate_hardening.PinContractTests.test_boundary_unrelated_shas_are_ignored) ... ok
+test_boundary_uppercase_pin_matches_lock (test_gate_hardening.PinContractTests.test_boundary_uppercase_pin_matches_lock) ... ok
+test_green_all_four_agree (test_gate_hardening.PinContractTests.test_green_all_four_agree) ... ok
+test_green_quoted_keys_values_and_trailing_comments (test_gate_hardening.PinContractTests.test_green_quoted_keys_values_and_trailing_comments) ... ok
+test_marker_is_case_insensitive (test_gate_hardening.PinContractTests.test_marker_is_case_insensitive) ... ok
+test_red_agents_differs_from_lock (test_gate_hardening.PinContractTests.test_red_agents_differs_from_lock) ... ok
+test_red_block_scalars_with_properties_or_without_key (test_gate_hardening.PinContractTests.test_red_block_scalars_with_properties_or_without_key) ... ok
+test_red_declarations_only_in_comments (test_gate_hardening.PinContractTests.test_red_declarations_only_in_comments) ... ok
+test_red_floating_workflow_ref (test_gate_hardening.PinContractTests.test_red_floating_workflow_ref) ... ok
+test_red_lock_short_sha (test_gate_hardening.PinContractTests.test_red_lock_short_sha) ... ok
+test_red_pins_inside_block_scalar_are_not_operative (test_gate_hardening.PinContractTests.test_red_pins_inside_block_scalar_are_not_operative) ... ok
+test_red_quoted_operative_keys_with_commented_decoys (test_gate_hardening.PinContractTests.test_red_quoted_operative_keys_with_commented_decoys) ... ok
+test_red_readme_differs_from_lock (test_gate_hardening.PinContractTests.test_red_readme_differs_from_lock) ... ok
+test_red_readme_without_declaration (test_gate_hardening.PinContractTests.test_red_readme_without_declaration) ... ok
+test_red_stale_pin_next_to_a_correct_one (test_gate_hardening.PinContractTests.test_red_stale_pin_next_to_a_correct_one) ... ok
+test_red_unrecognized_governance_reference (test_gate_hardening.PinContractTests.test_red_unrecognized_governance_reference) ... ok
+test_red_url_with_branch_ref (test_gate_hardening.PinContractTests.test_red_url_with_branch_ref) ... ok
+test_red_workflow_from_another_owner (test_gate_hardening.PinContractTests.test_red_workflow_from_another_owner) ... ok
+test_red_workflow_governance_ref_differs_from_lock (test_gate_hardening.PinContractTests.test_red_workflow_governance_ref_differs_from_lock) ... ok
+test_red_workflow_uses_differs_from_lock (test_gate_hardening.PinContractTests.test_red_workflow_uses_differs_from_lock) ... ok
+test_validate_runs_pin_contract (test_gate_hardening.PinContractTests.test_validate_runs_pin_contract) ... ok
+test_boundary_checked_on_two_days_from_round (test_gate_hardening.ProtectedSpecTests.test_boundary_checked_on_two_days_from_round) ... ok
+test_boundary_editorial_size_limit (test_gate_hardening.ProtectedSpecTests.test_boundary_editorial_size_limit) ... ok
+test_green_checked_on_moves_with_round_date (test_gate_hardening.ProtectedSpecTests.test_green_checked_on_moves_with_round_date) ... ok
+test_green_editorial_typo_with_decision (test_gate_hardening.ProtectedSpecTests.test_green_editorial_typo_with_decision) ... ok
+test_green_literature_update_by_round (test_gate_hardening.ProtectedSpecTests.test_green_literature_update_by_round) ... ok
+test_green_source_refresh_via_hygiene (test_gate_hardening.ProtectedSpecTests.test_green_source_refresh_via_hygiene) ... ok
+test_green_spec_change_with_impact (test_gate_hardening.ProtectedSpecTests.test_green_spec_change_with_impact) ... ok
+test_red_blank_draft_round_is_not_a_basis (test_gate_hardening.ProtectedSpecTests.test_red_blank_draft_round_is_not_a_basis) ... ok
+test_red_blank_non_draft_round_is_rejected (test_gate_hardening.ProtectedSpecTests.test_red_blank_non_draft_round_is_rejected) ... ok
+test_red_blocked_round_is_not_a_basis (test_gate_hardening.ProtectedSpecTests.test_red_blocked_round_is_not_a_basis) ... ok
+test_red_checked_on_via_hygiene (test_gate_hardening.ProtectedSpecTests.test_red_checked_on_via_hygiene) ... ok
+test_red_decision_lists_unchanged_field (test_gate_hardening.ProtectedSpecTests.test_red_decision_lists_unchanged_field) ... ok
+test_red_editorial_over_limit (test_gate_hardening.ProtectedSpecTests.test_red_editorial_over_limit) ... ok
+test_red_existing_decision_is_immutable (test_gate_hardening.ProtectedSpecTests.test_red_existing_decision_is_immutable) ... ok
+test_red_hygiene_cannot_touch_statement (test_gate_hardening.ProtectedSpecTests.test_red_hygiene_cannot_touch_statement) ... ok
+test_red_immutable_id (test_gate_hardening.ProtectedSpecTests.test_red_immutable_id) ... ok
+test_red_literature_update_with_other_problem_round (test_gate_hardening.ProtectedSpecTests.test_red_literature_update_with_other_problem_round) ... ok
+test_red_new_problem_without_decision_and_green_with (test_gate_hardening.ProtectedSpecTests.test_red_new_problem_without_decision_and_green_with) ... ok
+test_red_other_problem_decision_cannot_cover (test_gate_hardening.ProtectedSpecTests.test_red_other_problem_decision_cannot_cover) ... ok
+test_red_problem_card_deleted (test_gate_hardening.ProtectedSpecTests.test_red_problem_card_deleted) ... ok
+test_red_round_does_not_authorize_spec (test_gate_hardening.ProtectedSpecTests.test_red_round_does_not_authorize_spec) ... ok
+test_red_round_id_must_match_directory (test_gate_hardening.ProtectedSpecTests.test_red_round_id_must_match_directory) ... ok
+test_red_spec_and_status_same_pr (test_gate_hardening.ProtectedSpecTests.test_red_spec_and_status_same_pr) ... ok
+test_red_spec_change_with_results_same_pr (test_gate_hardening.ProtectedSpecTests.test_red_spec_change_with_results_same_pr) ... ok
+test_red_spec_change_without_impact (test_gate_hardening.ProtectedSpecTests.test_red_spec_change_without_impact) ... ok
+test_red_statement_change_without_record (test_gate_hardening.ProtectedSpecTests.test_red_statement_change_without_record) ... ok
+test_green_claimed_resolved_by_round (test_gate_hardening.StatusTransitionTests.test_green_claimed_resolved_by_round) ... ok
+test_green_claimed_resolved_resolution_fixed_by_decision (test_gate_hardening.StatusTransitionTests.test_green_claimed_resolved_resolution_fixed_by_decision) ... ok
+test_green_completed_external_as_written_by_admit (test_gate_hardening.StatusTransitionTests.test_green_completed_external_as_written_by_admit) ... ok
+test_green_completed_internal_with_independent_verifier (test_gate_hardening.StatusTransitionTests.test_green_completed_internal_with_independent_verifier) ... ok
+test_green_partial_by_partial_progress_round (test_gate_hardening.StatusTransitionTests.test_green_partial_by_partial_progress_round) ... ok
+test_green_pause_with_status_change (test_gate_hardening.StatusTransitionTests.test_green_pause_with_status_change) ... ok
+test_green_resolution_only_correction_by_decision (test_gate_hardening.StatusTransitionTests.test_green_resolution_only_correction_by_decision) ... ok
+test_green_retract_completed_problem_by_decision (test_gate_hardening.StatusTransitionTests.test_green_retract_completed_problem_by_decision) ... ok
+test_red_claimed_resolved_needs_matching_verdict (test_gate_hardening.StatusTransitionTests.test_red_claimed_resolved_needs_matching_verdict) ... ok
+test_red_claimed_resolved_round_rewrites_resolution (test_gate_hardening.StatusTransitionTests.test_red_claimed_resolved_round_rewrites_resolution) ... ok
+test_red_claimed_resolved_round_writes_resolution (test_gate_hardening.StatusTransitionTests.test_red_claimed_resolved_round_writes_resolution) ... ok
+test_red_completed_external_by_decision (test_gate_hardening.StatusTransitionTests.test_red_completed_external_by_decision) ... ok
+test_red_completed_external_resolution_mismatch (test_gate_hardening.StatusTransitionTests.test_red_completed_external_resolution_mismatch) ... ok
+test_red_completed_external_with_other_problem_round (test_gate_hardening.StatusTransitionTests.test_red_completed_external_with_other_problem_round) ... ok
+test_red_completed_external_without_round (test_gate_hardening.StatusTransitionTests.test_red_completed_external_without_round) ... ok
+test_red_completed_internal_cites_blocked_round (test_gate_hardening.StatusTransitionTests.test_red_completed_internal_cites_blocked_round) ... ok
+test_red_completed_internal_cites_merged_draft_stub (test_gate_hardening.StatusTransitionTests.test_red_completed_internal_cites_merged_draft_stub) ... ok
+test_red_completed_internal_cites_missing_round (test_gate_hardening.StatusTransitionTests.test_red_completed_internal_cites_missing_round) ... ok
+test_red_completed_internal_cites_round_added_in_same_change (test_gate_hardening.StatusTransitionTests.test_red_completed_internal_cites_round_added_in_same_change) ... ok
+test_red_completed_internal_self_verified (test_gate_hardening.StatusTransitionTests.test_red_completed_internal_self_verified) ... ok
+test_red_completed_internal_verified_by_decision_author (test_gate_hardening.StatusTransitionTests.test_red_completed_internal_verified_by_decision_author) ... ok
+test_red_contradictory_decision_next_to_round_transition (test_gate_hardening.StatusTransitionTests.test_red_contradictory_decision_next_to_round_transition) ... ok
+test_red_decision_cannot_move_to_claimed_resolved (test_gate_hardening.StatusTransitionTests.test_red_decision_cannot_move_to_claimed_resolved) ... ok
+test_red_draft_round_admitted_after_completion (test_gate_hardening.StatusTransitionTests.test_red_draft_round_admitted_after_completion) ... ok
+test_red_new_research_on_completed_problem (test_gate_hardening.StatusTransitionTests.test_red_new_research_on_completed_problem) ... ok
+test_red_open_round_used_after_completion (test_gate_hardening.StatusTransitionTests.test_red_open_round_used_after_completion) ... ok
+test_red_round_verdict_cannot_leave_terminal_status (test_gate_hardening.StatusTransitionTests.test_red_round_verdict_cannot_leave_terminal_status) ... ok
+test_red_status_change_wrong_from (test_gate_hardening.StatusTransitionTests.test_red_status_change_wrong_from) ... ok
+test_red_status_move_must_list_status (test_gate_hardening.StatusTransitionTests.test_red_status_move_must_list_status) ... ok
+test_red_status_without_any_record (test_gate_hardening.StatusTransitionTests.test_red_status_without_any_record) ... ok
+test_boundary_legacy_records_are_grandfathered (test_hygiene.BranchContractTests.test_boundary_legacy_records_are_grandfathered) ... ok
+test_green_accepted_forms (test_hygiene.BranchContractTests.test_green_accepted_forms) ... ok
+test_red_agent_must_be_slug (test_hygiene.BranchContractTests.test_red_agent_must_be_slug) ... ok
+test_red_historical_record_still_needs_an_agent_branch (test_hygiene.BranchContractTests.test_red_historical_record_still_needs_an_agent_branch) ... ok
+test_red_rejected_forms (test_hygiene.BranchContractTests.test_red_rejected_forms) ... ok
+test_red_start_rejects_unsafe_topic (test_hygiene.BranchContractTests.test_red_start_rejects_unsafe_topic) ... ok
+test_start_default_topic_via_cli (test_hygiene.BranchContractTests.test_start_default_topic_via_cli) ... ok
+test_start_generates_contract_branch_and_is_unique (test_hygiene.BranchContractTests.test_start_generates_contract_branch_and_is_unique) ... ok
+test_boundary_malformed_query_shape_is_still_clean (test_hygiene.CleanBlockedTests.test_boundary_malformed_query_shape_is_still_clean) ... ok
+test_green_complete_record_is_admitted (test_hygiene.CleanBlockedTests.test_green_complete_record_is_admitted) ... ok
+test_red_checked_at_empty_string (test_hygiene.CleanBlockedTests.test_red_checked_at_empty_string) ... ok
+test_red_checked_at_missing (test_hygiene.CleanBlockedTests.test_red_checked_at_missing) ... ok
+test_red_checked_at_not_iso (test_hygiene.CleanBlockedTests.test_red_checked_at_not_iso) ... ok
+test_red_checked_at_null (test_hygiene.CleanBlockedTests.test_red_checked_at_null) ... ok
+test_red_checked_at_without_offset (test_hygiene.CleanBlockedTests.test_red_checked_at_without_offset) ... ok
+test_red_preflight_missing (test_hygiene.CleanBlockedTests.test_red_preflight_missing) ... ok
+test_red_started_at_missing (test_hygiene.CleanBlockedTests.test_red_started_at_missing) ... ok
+test_start_prints_clean_error_for_unknown_problem (test_hygiene.CleanBlockedTests.test_start_prints_clean_error_for_unknown_problem) ... ok
+test_boundary_research_lock_without_version (test_hygiene.ProtocolVersionTests.test_boundary_research_lock_without_version) ... ok
+test_green_governance_lab_json_matches_code (test_hygiene.ProtocolVersionTests.test_green_governance_lab_json_matches_code) ... ok
+test_green_research_lock_matches (test_hygiene.ProtocolVersionTests.test_green_research_lock_matches) ... ok
+test_green_versions_document_lists_current_version (test_hygiene.ProtocolVersionTests.test_green_versions_document_lists_current_version) ... ok
+test_red_governance_lab_json_mismatch (test_hygiene.ProtocolVersionTests.test_red_governance_lab_json_mismatch) ... ok
+test_red_research_lock_declares_other_version (test_hygiene.ProtocolVersionTests.test_red_research_lock_declares_other_version) ... ok
+
+----------------------------------------------------------------------
+Ran 168 tests in 4.392s
+
+OK
+COMPLETED_EXTERNAL: record updated on this working branch; stop searching for a new solution. PR still requires review.
+REVIEW lab.json artifact_roots at the merge base are invalid under this gate and classify nothing: lab.json artifact_roots[0]: kind must be one of ['experiments', 'proofs', 'results']
+REVIEW lab.json artifact_roots:
+    - []
+    + [('FrontierMath/Research/MATH001/', 'MATH-001', 'proofs')]
+PASS: 1 changed paths; 0 research scope(s), 0 problem card(s), 0 decision(s), 0 admitted round(s) checked.
+PASS: 2 changed paths; 1 research scope(s), 0 problem card(s), 0 decision(s), 1 admitted round(s) checked.
+REVIEW lab.json artifact_roots:
+    - []
+    + [('FrontierMath/Research/MATH001/', 'MATH-001', 'proofs')]
+PASS: 1 changed paths; 0 research scope(s), 0 problem card(s), 0 decision(s), 0 admitted round(s) checked.
+REVIEW lab.json artifact_roots at the merge base are invalid under this gate and classify nothing: lab.json artifact_roots[0]: kind must be one of ['experiments', 'proofs', 'results']
+REVIEW lab.json artifact_roots:
+    - []
+    + [('FrontierMath/Research/MATH001/', 'MATH-001', 'proofs')]
+PASS: 2 problem records; governance pin 111111111111 consistent; paths registered. Metadata checks only, not proof of openness or discovery.
+REVIEW lab.json artifact_roots:
+    - []
+    + [('FrontierMath/Research/MATH001/', 'MATH-001', 'proofs')]
+PASS: 2 problem records; governance pin 111111111111 consistent; paths registered. Metadata checks only, not proof of openness or discovery.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+/tmp/tmp359xnc9v/decisions/20261009T103245934316Z-claude-MED-001-hygiene/decision.json
+Decision recorded on this branch. Edit the card in the same PR; CI checks that the listed fields changed.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+SKIP: governance repository; research path and problem contracts do not apply (unit tests guard the gate).
+PASS: 2 changed paths; 0 research scope(s), 0 problem card(s), 0 decision(s), 0 admitted round(s) checked.
+PASS: 1 changed paths; 0 research scope(s), 0 problem card(s), 0 decision(s), 0 admitted round(s) checked.
+PASS: 3 changed paths; 0 research scope(s), 0 problem card(s), 0 decision(s), 0 admitted round(s) checked.
+PASS: 2 changed paths; 1 research scope(s), 0 problem card(s), 0 decision(s), 1 admitted round(s) checked.
+PASS: 2 changed paths; 1 research scope(s), 0 problem card(s), 0 decision(s), 1 admitted round(s) checked.
+PASS: 2 changed paths; 1 research scope(s), 0 problem card(s), 0 decision(s), 1 admitted round(s) checked.
+PASS: 2 changed paths; 0 research scope(s), 0 problem card(s), 0 decision(s), 1 admitted round(s) checked.
+PASS: 2 problem records; governance pin 111111111111 consistent; paths registered. Metadata checks only, not proof of openness or discovery.
+PASS: 2 problem records; governance pin 111111111111 consistent; paths registered. Metadata checks only, not proof of openness or discovery.
+REVIEW MED-001.statement:
+    - 'Fixture statement about external validation.'
+    + 'Fixture statement about external validation.xxxxxxxxxxxx'
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 0 decision(s), 1 admitted round(s) checked.
+REVIEW MED-001.statement:
+    - 'Fixture statement about external validation.'
+    + 'Fixture statement about external validations.'
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 0 decision(s), 1 admitted round(s) checked.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+REVIEW MED-001.statement:
+    - 'Fixture statement about external validation.'
+    + 'Rescoped: only site-held-out calibration for one intended use.'
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+REVIEW MED-001.statement:
+    - 'Fixture statement about external validation.'
+    + 'Fixture statement about external validations.'
+REVIEW MED-001.statement:
+    - 'Fixture statement about external validation.'
+    + 'Fixture statement about external validation.xxxxxxxxxxxxx'
+REVIEW MED-001.statement:
+    - 'Fixture statement about external validation.'
+    + 'Fixture statement about external validations.'
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+REVIEW MED-001.statement:
+    - 'Fixture statement about external validation.'
+    + 'Fixture statement about external validations.'
+REVIEW MED-001.completion_criterion:
+    - 'Fixture completion criterion.'
+    + 'Any benchmark gain.'
+REVIEW MED-001.statement:
+    - 'Fixture statement about external validation.'
+    + 'Rescoped statement.'
+REVIEW MED-001.statement:
+    - 'Fixture statement about external validation.'
+    + 'Rescoped statement.'
+REVIEW MED-001.statement:
+    - 'Fixture statement about external validation.'
+    + 'Rescoped statement.'
+REVIEW MED-001.statement:
+    - 'Fixture statement about external validation.'
+    + 'A weaker statement.'
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 0 decision(s), 1 admitted round(s) checked.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 0 decision(s), 1 admitted round(s) checked.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 0 decision(s), 1 admitted round(s) checked.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+PASS: 2 changed paths; 0 research scope(s), 1 problem card(s), 1 decision(s), 0 admitted round(s) checked.
+PASS: 1 problem records; governance pin 111111111111 consistent; paths registered. Metadata checks only, not proof of openness or discovery.
+/tmp/tmp04osd4r2/runs/20261009T103249094683Z-claude-MED-001/round.json
+branch: git switch -c claude/MED-001-baseline-20261009t103249094683z
+BLOCKED: browse now, read primary sources, complete preflight, then run admit. No autonomous search has occurred.
+/tmp/tmp04osd4r2/runs/20261009T103249096295Z-claude-MED-001/round.json
+branch: git switch -c claude/MED-001-baseline-20261009t103249096295z
+BLOCKED: browse now, read primary sources, complete preflight, then run admit. No autonomous search has occurred.
+/tmp/tmp04osd4r2/runs/20261009T103249097777Z-claude-MED-001/round.json
+branch: git switch -c claude/MED-001-round-20261009t103249097777z
+BLOCKED: browse now, read primary sources, complete preflight, then run admit. No autonomous search has occurred.
+Governance documents present; run unit tests separately.
+PASS: 1 problem records; governance pin 111111111111 consistent; paths registered. Metadata checks only, not proof of openness or discovery.

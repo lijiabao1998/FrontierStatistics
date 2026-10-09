@@ -1,0 +1,30 @@
+{
+  "algorithm": "sha256",
+  "scope": "All candidate research code, frozen spec, raw numerical results, archived selected inputs, and reports/logs; manifest itself excluded. Not a signature or independent trust certificate.",
+  "files": {
+    "problems/STAT-001/experiments/synthetic_shift.py": "835c86ab52c7dcd1cfac6e2c12c24df7baf9a6496e07ac8495ecb95f821b1659",
+    "problems/STAT-001/experiments/test_synthetic_shift.py": "8f1844880a8940f31bd4e6572c336b99d1b23a5d3d77b25f47bb0ce18b76adb5",
+    "problems/STAT-001/experiments/verify_artifacts.py": "554dabfa2d7d0097a68265bfe467849298bf52fa9285ef9f8566cd46184de225",
+    "problems/STAT-001/results/20261009T102720435939Z-codex-STAT-001/environment.json": "ecf9ddd6a081b0f8ef4346138eaca6512cf6ad81fc51e5b84f9ffc6b069cf2bb",
+    "problems/STAT-001/results/20261009T102720435939Z-codex-STAT-001/input_hashes.json": "2c72dc691a6c0855370660dc4da9b1708358e7f067f8a6afd0cb08ec1611be8f",
+    "problems/STAT-001/results/20261009T102720435939Z-codex-STAT-001/raw_selected.json": "7243c58480b94f6d0c4acefe58d8841f22822ee14abe3c652b492eef0885bcad",
+    "problems/STAT-001/results/20261009T102720435939Z-codex-STAT-001/replicates.csv": "33ee503d54d1be91051040e3d1387e9fc4e45a8804a0af176321ae08fbc67c3e",
+    "problems/STAT-001/results/20261009T102720435939Z-codex-STAT-001/summary.json": "e51c6e8ac51cbfcdc2a5cc935e0894245ee014425c5c87e36569ed5cfb1f74dd",
+    "runs/20261009T102720435939Z-codex-STAT-001/REPORT.md": "4cf7ec35c7826481d13b2e465bf1d1286afc327001c3452f64e6309d9469664e",
+    "runs/20261009T102720435939Z-codex-STAT-001/VERIFY.md": "1dde02f788247c36ec896e6b52a5673979532cf69a0002c0afa38d2b38ef737a",
+    "runs/20261009T102720435939Z-codex-STAT-001/acceptance.json": "3e5044ee3c360f266ae2ddaba5edf8493ae89512f8ffe371d45f2e8f060d9fa8",
+    "runs/20261009T102720435939Z-codex-STAT-001/admission.log": "f6a209a746d82adb6a0c0c8c4b0e482307fdc5f4d25c3fc7972c97407a487065",
+    "runs/20261009T102720435939Z-codex-STAT-001/check-diff.log": "f719e582d394a7fe744af5b99f45822e55947588f193ecd1e0c5ecef1651a309",
+    "runs/20261009T102720435939Z-codex-STAT-001/check-pins.log": "71216a1d849a30d47642957d98598456f879d07ea575462954519d91eeb7e170",
+    "runs/20261009T102720435939Z-codex-STAT-001/experiment.log": "cc5a919f077590bed180a3c8ee21a3028f65e09b146a576658450c913373cc82",
+    "runs/20261009T102720435939Z-codex-STAT-001/governance-tests.log": "23ec69f0de95c795b6a41feef233e06e7ef8e631764d4cd4a6922aafc7dcfa63",
+    "runs/20261009T102720435939Z-codex-STAT-001/independent-review.json": "a0686ad787b53c33bf989154cd905fc5c44cecd1731869dc9fbbfe0ab570430b",
+    "runs/20261009T102720435939Z-codex-STAT-001/integrity-positive.log": "11e7953929ce59bab5a5db622fd122cd680766027a20e10b70d3ffa5411ef2b5",
+    "runs/20261009T102720435939Z-codex-STAT-001/quantile-mutant-negative.log": "31a02eb9cb4f23eda31a07ab95359d40e420a80cdc0bf107d720afe9f3192e4e",
+    "runs/20261009T102720435939Z-codex-STAT-001/round.json": "fa5da30ef0eb610ec2701758a9577cdc65b4a270978d71a52d99f4162ad70e9f",
+    "runs/20261009T102720435939Z-codex-STAT-001/tamper-negative.log": "7f997c71c0d835c643d2c7a985f47f94849a102b7df9ce225da5ed9220d577f3",
+    "runs/20261009T102720435939Z-codex-STAT-001/unit-tests.log": "6aabae33a57bd50e359a600bb45111c451c15b1ca1e73b0437ae8a9881e42fe3",
+    "runs/20261009T102720435939Z-codex-STAT-001/validate.log": "cc1a3efb46696b7f7a477059f22a4db435e8a8e389d40fc333f9bb79654ad887",
+    "runs/20261009T102720435939Z-codex-STAT-001/local-provenance.json": "a9a85a5a48ef1478a5bc667e94760e2370a523c2e9e9f236116c704d943e1b1c"
+  }
+}

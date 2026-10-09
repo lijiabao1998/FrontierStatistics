@@ -1,0 +1,14 @@
+test_infinity_boundary (test_synthetic_shift.QuantileControls.test_infinity_boundary) ... ok
+test_invalid_inputs (test_synthetic_shift.QuantileControls.test_invalid_inputs) ... ok
+test_known_unweighted_positive (test_synthetic_shift.QuantileControls.test_known_unweighted_positive) ... ok
+test_ratio_expectation_one (test_synthetic_shift.QuantileControls.test_ratio_expectation_one) ... ok
+test_seed_split (test_synthetic_shift.QuantileControls.test_seed_split) ... ok
+test_test_atom_tamper_is_detected (test_synthetic_shift.QuantileControls.test_test_atom_tamper_is_detected) ... ok
+test_ties (test_synthetic_shift.QuantileControls.test_ties) ... ok
+test_weight_association (test_synthetic_shift.QuantileControls.test_weight_association) ... ok
+test_weight_scale_invariance (test_synthetic_shift.QuantileControls.test_weight_scale_invariance) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.001s
+
+OK

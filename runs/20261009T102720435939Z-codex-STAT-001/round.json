@@ -1,0 +1,143 @@
+{
+  "round_id": "20261009T102720435939Z-codex-STAT-001",
+  "problem_id": "STAT-001",
+  "agent": "codex",
+  "branch": "codex/STAT-001-synthetic-shift-20261009t102720435939z",
+  "base_sha": "3e9a457ce6a5033f405c6b98efca6c871c9eed53",
+  "started_at": "2026-10-09T10:27:20.435939+00:00",
+  "state": "FINISHED",
+  "acceptance": "Frozen specification acceptance.json SHA256 3e5044ee3c360f266ae2ddaba5edf8493ae89512f8ffe371d45f2e8f060d9fa8. Replicate known oracle weighted conformal under five synthetic settings; retain failures. No parent problem completion.",
+  "not_done": "NOT_RUN: learned density ratios, real data, new/general theorem, independent new-data experiment, merge, deployment. Parent STAT-001 unchanged OPEN. Independent numerical replay passed; invalid-input/tamper harness only author checked.",
+  "budget": {
+    "wall_minutes": 30,
+    "hard_stop_utc": "2026-10-09T10:55:41Z",
+    "usd": 0,
+    "max_trials": 100,
+    "trial_definition": "one independent calibration replicate with five frozen target scenarios (500 scenario-replicates total); deterministic unit tests are not stochastic search trials"
+  },
+  "preflight": {
+    "checked_at": "2026-10-09T10:29:39.056067+00:00",
+    "verdict": "PARTIAL_PROGRESS",
+    "queries": [
+      {
+        "category": "general",
+        "query": "conformal prediction distribution shift covariate conditional shift coverage weighted conformal",
+        "engine": "web.run public web search (arXiv-domain query for discipline)",
+        "outcome": "Found known weighted conformal and newer conditional/robust methods; oracle repair is established."
+      },
+      {
+        "category": "discipline",
+        "query": "site.arxiv.org conformal prediction covariate shift Tibshirani Barber Candes Ramdas 2019",
+        "engine": "web.run public web search (arXiv-domain query for discipline)",
+        "outcome": "Found arXiv:1904.06019; opened full NeurIPS 2019 paper and relevant weighting/covariate-shift sections."
+      },
+      {
+        "category": "solution",
+        "query": "conformal covariate shift solved exact finite sample coverage 2026 weighted prediction",
+        "engine": "web.run public web search (arXiv-domain query for discipline)",
+        "outcome": "Found 2026-09-27 arXiv:2609.33456 recent training-conditional bounds; abstract-only read, not independently verified."
+      },
+      {
+        "category": "criticism",
+        "query": "weighted conformal prediction covariate shift correction erratum failure density ratio",
+        "engine": "web.run public web search (arXiv-domain query for discipline)",
+        "outcome": "Found limitations around support/weight estimation; no verified correction in bounded search."
+      },
+      {
+        "category": "criticism",
+        "query": "\"Conformal Prediction Under Covariate Shift\" correction erratum retraction",
+        "engine": "web.run public web search (arXiv-domain query for discipline)",
+        "outcome": "No confirmed erratum/retraction found in bounded search; absence is not proof."
+      },
+      {
+        "category": "solution",
+        "query": "\"conformal prediction\" \"conditional shift\" resolved exact coverage",
+        "engine": "web.run public web search (arXiv-domain query for discipline)",
+        "outcome": "Date-unrestricted search found restricted guarantees/structural approaches, no independently confirmed exact parent-scope resolution."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Conformal Prediction Under Covariate Shift",
+        "url": "https://papers.neurips.cc/paper_files/paper/2019/file/8fb21ee7a2207526da55a679f0332de2-Paper.pdf",
+        "kind": "primary",
+        "supports": "Known-ratio weighting under invariant conditional law, with test-point infinity mass; finite-sample marginal guarantee. Synthetic replication design only, not copying original data or results.",
+        "version": "NeurIPS 2019 proceedings",
+        "read_extent": "full text available; read sections 1-2 and Corollary 1, equations 5-7",
+        "read_on": "2026-10-09",
+        "license_note": "Read-only; paper not redistributed; independently written implementation and summaries."
+      },
+      {
+        "title": "Training-Conditional Coverage Bounds under Covariate Shift",
+        "url": "https://arxiv.org/html/2405.16594v3",
+        "kind": "primary",
+        "supports": "Marginal coverage and coverage conditional on calibration differ; Section 2.3 weighting and Section 3.1 assumptions constrain stronger claims.",
+        "version": "arXiv:2405.16594v3, 2025-07-07",
+        "read_extent": "full text available; read abstract, Sections 1, 2.3 and 3.1; no complete proof verification",
+        "read_on": "2026-10-09",
+        "license_note": "arXiv perpetual non-exclusive license; no full text/data copied."
+      },
+      {
+        "title": "Sharp training-conditional coverage for conformal prediction under covariate shift",
+        "url": "https://arxiv.org/abs/2609.33456",
+        "kind": "primary",
+        "supports": "Recent related narrower coverage analysis; novelty warning only, not validation for this implementation.",
+        "version": "v1, 2026-09-27",
+        "read_extent": "abstract-only and submission history",
+        "read_on": "2026-10-09"
+      },
+      {
+        "title": "Robust Conformal Prediction under Distribution Shift via Physics-Informed Structural Causal Model",
+        "url": "https://arxiv.org/abs/2403.15025",
+        "kind": "primary",
+        "supports": "Original topic-card source notes conditional-shift limitation and structured remedies; does not establish arbitrary-shift solution.",
+        "version": "v1, 2024-03-22",
+        "read_extent": "abstract-only and submission history",
+        "read_on": "2026-10-09"
+      }
+    ],
+    "limitations": "Bounded search, not exhaustive. Read two full-text sources in relevant sections; two newer/topic-card sources abstract-only. No claim of complete proof audit or confirmed absence of errata. No third-party dataset downloaded.",
+    "scope_comparison": "Oracle known-ratio covariate shift is already solved; this round explicitly REPLICATES a synthetic special case. Parent includes unknown/misspecified and conditional shift, which these restricted guarantees do not close. Recent work is not independently verified here.",
+    "baseline": "Vanilla split-conformal versus test-point-aware oracle weighted split-conformal; inverse-ratio and conditional-law violation controls.",
+    "sources_read": true,
+    "scope_compared": true,
+    "retractions_checked": true,
+    "licenses_checked": true,
+    "safety_checked": true,
+    "baseline_identified": true,
+    "acceptance_frozen": true
+  },
+  "artifacts": [
+    "problems/STAT-001/experiments/synthetic_shift.py",
+    "problems/STAT-001/experiments/test_synthetic_shift.py",
+    "problems/STAT-001/experiments/verify_artifacts.py",
+    "problems/STAT-001/results/20261009T102720435939Z-codex-STAT-001/",
+    "runs/20261009T102720435939Z-codex-STAT-001/REPORT.md",
+    "runs/20261009T102720435939Z-codex-STAT-001/VERIFY.md",
+    "runs/20261009T102720435939Z-codex-STAT-001/independent-review.json"
+  ],
+  "result": {
+    "kind": "SYNTHETIC_BASELINE_REPLICATION",
+    "statistical_checks": "9/9 first-run pass",
+    "deterministic_controls": "9/9 pass",
+    "negative_controls": "quantile infinity omission and coverage-count tamper exit1 as expected",
+    "independent_verification": {
+      "verdict": "INDEPENDENT_FINITE_SYNTHETIC_CHECK_PASS",
+      "reviewer": "separate coordinator session / independent implementation",
+      "report": "independent-review.json",
+      "report_sha256": "a0686ad787b53c33bf989154cd905fc5c44cecd1731869dc9fbbfe0ab570430b",
+      "verifier_code_sha256": "3e708cc9580c6d27cc6ece13a87e1a80f4fc7be32fc112d0cbc07a315a6ed088",
+      "scope": "Independently generated same frozen inputs; exact-integer weighted-mass quantiles, all1500 prediction-count rows,16500 archived floathex input points, all15 coverage MCSE/t-CIs. No author imports. Not independent new data or scientific/general-theorem certification.",
+      "limitations": "Author invalid-input and tamper harness not independently rerun; independent verifier code reserved for separate review PR."
+    },
+    "parent_problem_completed": false,
+    "unique_calibration_replications": 100,
+    "scenario_replicates": 500,
+    "experiment_wall_seconds": 4.392800959998567,
+    "usd_spent": 0
+  },
+  "scope_claim": "https://github.com/lijiabao1998/FrontierStatistics/issues/3",
+  "governance_pin": "9c3ae2dbaa1c814f3ef451c041dedfe3b77d926f",
+  "admitted_at": "2026-10-09T10:29:39.106492+00:00",
+  "finished_at": "2026-10-09T10:35:23.655244+00:00"
+}

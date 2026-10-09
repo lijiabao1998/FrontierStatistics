@@ -1,0 +1,27 @@
+conditional_scale/vanilla: coverage=0.248640 CI95=[0.24465451441416972, 0.2526254855858303] MCSE=0.002009 width=4.047494
+conditional_scale/oracle_weighted: coverage=0.632100 CI95=[0.6219474183683822, 0.6422525816316178] MCSE=0.005117 width=13.208407
+conditional_scale/wrong_ratio: coverage=0.207160 CI95=[0.20402423453600418, 0.21029576546399584] MCSE=0.001580 width=3.304701
+covariate_high/vanilla: coverage=0.442420 CI95=[0.43750846899007334, 0.4473315310099266] MCSE=0.002475 width=4.047494
+covariate_high/oracle_weighted: coverage=0.906210 CI95=[0.8992703508347666, 0.9131496491652333] MCSE=0.003497 width=13.209623
+covariate_high/wrong_ratio: coverage=0.376770 CI95=[0.3726774535100693, 0.3808625464899307] MCSE=0.002063 width=3.304660
+covariate_mid/vanilla: coverage=0.672010 CI95=[0.6676521543587849, 0.6763678456412151] MCSE=0.002196 width=4.047494
+covariate_mid/oracle_weighted: coverage=0.904590 CI95=[0.8986128078038874, 0.9105671921961126] MCSE=0.003012 width=10.322169
+covariate_mid/wrong_ratio: coverage=0.618850 CI95=[0.615095327852124, 0.6226046721478761] MCSE=0.001892 width=3.374279
+location_shift/vanilla: coverage=0.047490 CI95=[0.045366281051319145, 0.04961371894868085] MCSE=0.001070 width=4.047494
+location_shift/oracle_weighted: coverage=0.047490 CI95=[0.045366281051319145, 0.04961371894868085] MCSE=0.001070 width=4.047494
+location_shift/wrong_ratio: coverage=0.047490 CI95=[0.045366281051319145, 0.04961371894868085] MCSE=0.001070 width=4.047494
+no_shift/vanilla: coverage=0.897990 CI95=[0.8946498871772002, 0.9013301128228] MCSE=0.001683 width=4.047494
+no_shift/oracle_weighted: coverage=0.897990 CI95=[0.8946498871772002, 0.9013301128228] MCSE=0.001683 width=4.047494
+no_shift/wrong_ratio: coverage=0.897990 CI95=[0.8946498871772002, 0.9013301128228] MCSE=0.001683 width=4.047494
+{
+  "no_shift_mean": true,
+  "no_shift_identical": true,
+  "high_covariate_vanilla_failure": true,
+  "high_covariate_oracle_repair": true,
+  "high_covariate_width": true,
+  "high_covariate_no_infinite": true,
+  "conditional_scale_limit": true,
+  "location_limit": true,
+  "wrong_ratio_failure": true
+}
+experiment_exit_code=0
