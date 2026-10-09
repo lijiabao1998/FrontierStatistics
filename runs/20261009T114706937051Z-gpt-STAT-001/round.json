@@ -1,0 +1,95 @@
+{
+  "round_id": "20261009T114706937051Z-gpt-STAT-001",
+  "problem_id": "STAT-001",
+  "agent": "gpt",
+  "branch": "gpt/STAT-001-independent-replay-publication-20261009t114706937051z",
+  "base_sha": "e283ab2606fd975961fb692b0f89752fea108295",
+  "started_at": "2026-10-09T11:47:06.937051+00:00",
+  "state": "FINISHED",
+  "acceptance": "Portable publication and one deterministic rerun of previously written independent verifier. Preserve original acceptance SHA256 3e5044ee3c360f266ae2ddaba5edf8493ae89512f8ffe371d45f2e8f060d9fa8 and original result bytes. Exact-integer quantiles/counts must match all1500 rows; 16500 selected raw float-hex points must match; replicate mean/MCSE/t99 intervals tolerance1e-14; width tolerance1e-12. Two fixed corruptions (reported count and frozen spec hash) must be rejected. No author-code imports. Outcomes already known; not a blind or new stochastic experiment. No protected evaluator/spec/threshold change.",
+  "not_done": "No new sample, theorem, method, estimated-density-ratio guarantee, conditional coverage guarantee or parent completion. Earlier10:40 draft was never admitted; this bounded publication review starts11:47.",
+  "budget": {
+    "wall_minutes": 20,
+    "usd": 0,
+    "max_trials": 1,
+    "trial_definition": "one deterministic replay of existing fixed archive plus fixed corruption fixtures; zero new stochastic experiments"
+  },
+  "preflight": {
+    "checked_at": "2026-10-09T11:49:14.113606+00:00",
+    "verdict": "PARTIAL_PROGRESS",
+    "queries": [
+      {
+        "category": "general",
+        "query": "conformal prediction covariate shift weighted conformal prediction Tibshirani Barber Candes Ramdas",
+        "engine": "web.run search",
+        "outcome": "Known weighted conformal literature and conditional-coverage limits; later related methods exist. No definitive errata audit or novel-result claim."
+      },
+      {
+        "category": "discipline",
+        "query": "site.arxiv.org weighted conformal prediction covariate shift finite sample 1904.06019",
+        "engine": "web.run search",
+        "outcome": "Known weighted conformal literature and conditional-coverage limits; later related methods exist. No definitive errata audit or novel-result claim."
+      },
+      {
+        "category": "solution",
+        "query": "site.arxiv.org covariate shift conformal prediction solved exact likelihood ratios weighted quantile",
+        "engine": "web.run search",
+        "outcome": "Known weighted conformal literature and conditional-coverage limits; later related methods exist. No definitive errata audit or novel-result claim."
+      },
+      {
+        "category": "criticism",
+        "query": "site.arxiv.org limits conformal prediction conditional coverage distribution shift impossible",
+        "engine": "web.run search",
+        "outcome": "Known weighted conformal literature and conditional-coverage limits; later related methods exist. No definitive errata audit or novel-result claim."
+      },
+      {
+        "category": "criticism",
+        "query": "\"Conformal Prediction Under Covariate Shift\" correction erratum retraction",
+        "engine": "web.run search",
+        "outcome": "Known weighted conformal literature and conditional-coverage limits; later related methods exist. No definitive errata audit or novel-result claim."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Conformal Prediction Under Covariate Shift",
+        "url": "https://www.stat.berkeley.edu/~ryantibs/papers/weightedcp.pdf",
+        "kind": "primary",
+        "supports": "2019 author-hosted full PDF relevant sections read2026-10-09: weighted test-point infinity mass, unchanged conditional distribution and oracle likelihood-ratio assumptions; paraphrased only."
+      },
+      {
+        "title": "The limits of distribution-free conditional predictive inference",
+        "url": "https://arxiv.org/abs/1903.04684",
+        "kind": "primary",
+        "supports": "Author abstract read2026-10-09; full PDF opened but not proof-audited. Marginal and unrestricted conditional guarantees differ; bounded synthetic replay cannot establish universal conditional validity."
+      }
+    ],
+    "limitations": "Five actual fresh queries after start. No explicit correction found; search absence does not prove no erratum. Newer methods seen, not replicated. Existing independent outcomes disclosed before this publication unit; not blind. No paper text copied or third-party dataset used.",
+    "scope_comparison": "Known oracle-weighted split-conformal baseline only, unrelated to claiming broad STAT-001 completion. Pure synthetic records from existing admitted author round.",
+    "baseline": "Local e283ab2606fd975961fb692b0f89752fea108295 / remote9016939dc52de33f02f2b41446cdb9416ebc65cd identical tree33fc4d848484fc274eff16e452d73142c1327c60. Claim note on draftPR4 comment6080253887 links original issue3.",
+    "sources_read": true,
+    "scope_compared": true,
+    "retractions_checked": true,
+    "licenses_checked": true,
+    "safety_checked": true,
+    "baseline_identified": true,
+    "acceptance_frozen": true
+  },
+  "artifacts": [
+    "problems/STAT-001/experiments/independent_review/README.md",
+    "problems/STAT-001/experiments/independent_review/test_negative_controls.py",
+    "problems/STAT-001/experiments/independent_review/verify_statistics.py",
+    "problems/STAT-001/results/independent_review_20261009/statistics-independent-review.json",
+    "runs/20261009T114706937051Z-gpt-STAT-001/REPORT.md",
+    "runs/20261009T114706937051Z-gpt-STAT-001/negative-controls.json",
+    "runs/20261009T114706937051Z-gpt-STAT-001/replay.log"
+  ],
+  "result": {
+    "classification": "INDEPENDENT_DETERMINISTIC_REPLAY_PASS",
+    "new_stochastic_trials": 0,
+    "controls": "covered count and original spec hash corruptions rejected",
+    "publication": "PENDING",
+    "parent_problem": "OPEN"
+  },
+  "admitted_at": "2026-10-09T11:49:19.050654+00:00",
+  "finished_at": "2026-10-09T11:50:24.875012+00:00"
+}

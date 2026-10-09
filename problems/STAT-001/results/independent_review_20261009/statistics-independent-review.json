@@ -1,0 +1,143 @@
+{
+  "verdict": "INDEPENDENT_FINITE_SYNTHETIC_CHECK_PASS",
+  "scope": "Independent exact-integer weighted-mass quantiles, deterministic replay of same frozen samples, counts and replicate-level coverage CIs. Not independent new data, a new method, a theorem, conditional coverage or practical estimated-ratio guarantee. Author invalid-input test suite not independently rerun here.",
+  "rows_verified": 1500,
+  "archived_points_hex_verified": 16500,
+  "max_quantile_gap": 0,
+  "max_width_gap": 3.552713678800501e-15,
+  "max_summary_gap": 0,
+  "acceptance": {
+    "no_shift_mean": true,
+    "no_shift_exact_equal": true,
+    "covariate_high_failure": true,
+    "covariate_high_repair": true,
+    "width": true,
+    "no_infinities": true,
+    "conditional_scale_limit": true,
+    "location_limit": true,
+    "wrong_ratio": true
+  },
+  "cells": {
+    "conditional_scale/vanilla": {
+      "mean": 0.24864,
+      "mcse": 0.0020085936584706443,
+      "ci95": [
+        0.24465451441416972,
+        0.2526254855858303
+      ]
+    },
+    "conditional_scale/oracle_weighted": {
+      "mean": 0.6321,
+      "mcse": 0.005116669134339549,
+      "ci95": [
+        0.6219474183683822,
+        0.6422525816316178
+      ]
+    },
+    "conditional_scale/wrong_ratio": {
+      "mean": 0.20716,
+      "mcse": 0.0015803541349707641,
+      "ci95": [
+        0.20402423453600418,
+        0.21029576546399584
+      ]
+    },
+    "covariate_high/vanilla": {
+      "mean": 0.44242,
+      "mcse": 0.002475299390115683,
+      "ci95": [
+        0.43750846899007334,
+        0.4473315310099266
+      ]
+    },
+    "covariate_high/oracle_weighted": {
+      "mean": 0.90621,
+      "mcse": 0.0034974245935943766,
+      "ci95": [
+        0.8992703508347666,
+        0.9131496491652333
+      ]
+    },
+    "covariate_high/wrong_ratio": {
+      "mean": 0.37677,
+      "mcse": 0.002062549907568814,
+      "ci95": [
+        0.3726774535100693,
+        0.3808625464899307
+      ]
+    },
+    "covariate_mid/vanilla": {
+      "mean": 0.67201,
+      "mcse": 0.002196254617168587,
+      "ci95": [
+        0.6676521543587849,
+        0.6763678456412151
+      ]
+    },
+    "covariate_mid/oracle_weighted": {
+      "mean": 0.90459,
+      "mcse": 0.0030123682753379647,
+      "ci95": [
+        0.8986128078038874,
+        0.9105671921961126
+      ]
+    },
+    "covariate_mid/wrong_ratio": {
+      "mean": 0.61885,
+      "mcse": 0.0018922689603176987,
+      "ci95": [
+        0.615095327852124,
+        0.6226046721478761
+      ]
+    },
+    "location_shift/vanilla": {
+      "mean": 0.04749,
+      "mcse": 0.0010703058186586419,
+      "ci95": [
+        0.045366281051319145,
+        0.04961371894868085
+      ]
+    },
+    "location_shift/oracle_weighted": {
+      "mean": 0.04749,
+      "mcse": 0.0010703058186586419,
+      "ci95": [
+        0.045366281051319145,
+        0.04961371894868085
+      ]
+    },
+    "location_shift/wrong_ratio": {
+      "mean": 0.04749,
+      "mcse": 0.0010703058186586419,
+      "ci95": [
+        0.045366281051319145,
+        0.04961371894868085
+      ]
+    },
+    "no_shift/vanilla": {
+      "mean": 0.8979900000000001,
+      "mcse": 0.0016833405340380054,
+      "ci95": [
+        0.8946498871772002,
+        0.9013301128228
+      ]
+    },
+    "no_shift/oracle_weighted": {
+      "mean": 0.8979900000000001,
+      "mcse": 0.0016833405340380054,
+      "ci95": [
+        0.8946498871772002,
+        0.9013301128228
+      ]
+    },
+    "no_shift/wrong_ratio": {
+      "mean": 0.8979900000000001,
+      "mcse": 0.0016833405340380054,
+      "ci95": [
+        0.8946498871772002,
+        0.9013301128228
+      ]
+    }
+  },
+  "spec_sha256": "3e5044ee3c360f266ae2ddaba5edf8493ae89512f8ffe371d45f2e8f060d9fa8"
+}

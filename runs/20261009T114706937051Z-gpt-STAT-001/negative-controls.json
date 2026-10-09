@@ -1,0 +1,14 @@
+[
+  {
+    "case": "covered_count",
+    "rejected": true,
+    "exit_code": 1,
+    "reason": "AssertionError"
+  },
+  {
+    "case": "frozen_spec",
+    "rejected": true,
+    "exit_code": 1,
+    "reason": "AssertionError"
+  }
+]
