@@ -1,0 +1,21 @@
+{
+  "verdict": "INDEPENDENT_FINITE_SYNTHETIC_CHECK_PASS",
+  "scope": "Independent exact-integer weighted-mass quantiles, deterministic replay of same frozen samples, counts and replicate-level coverage CIs. Not independent new data, a new method, a theorem, conditional coverage or practical estimated-ratio guarantee. Author invalid-input test suite not independently rerun here.",
+  "rows_verified": 1500,
+  "archived_points_hex_verified": 16500,
+  "max_quantile_gap": 0,
+  "max_width_gap": 3.552713678800501e-15,
+  "max_summary_gap": 0,
+  "acceptance": {
+    "no_shift_mean": true,
+    "no_shift_exact_equal": true,
+    "covariate_high_failure": true,
+    "covariate_high_repair": true,
+    "width": true,
+    "no_infinities": true,
+    "conditional_scale_limit": true,
+    "location_limit": true,
+    "wrong_ratio": true
+  },
+  "spec_sha256": "3e5044ee3c360f266ae2ddaba5edf8493ae89512f8ffe371d45f2e8f060d9fa8"
+}
