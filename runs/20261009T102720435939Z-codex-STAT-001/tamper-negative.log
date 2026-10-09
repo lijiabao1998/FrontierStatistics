@@ -1,0 +1,3 @@
+REJECTED: covered total differs from group counts
+expected_exit_code=1
+actual_exit_code=1

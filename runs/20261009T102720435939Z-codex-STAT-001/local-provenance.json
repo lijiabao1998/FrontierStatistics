@@ -1,0 +1,22 @@
+{
+  "publication_caveat": "Local immutable freeze/admission preceded experiments. Unauthenticated HTTPS push failed, with remote candidate ref confirmed absent. GitHub connector publishes equivalent trees later using different commit metadata and therefore different SHAs. External freeze publication is after computation, not prospective public preregistration. Raw original local commit objects are retained below; their commit hashes can be recomputed.",
+  "scope_issue": "https://github.com/lijiabao1998/FrontierStatistics/issues/3",
+  "local_commits": [
+    {
+      "local_sha": "dc23c40a7bb6bd608e0c0ef88ea2a50c77de10f7",
+      "raw_commit_object": "tree e7f0f1fc5ec5961bffd62f56153e1b8c8885ca15\nparent 3e9a457ce6a5033f405c6b98efca6c871c9eed53\nauthor Codex <codex@users.noreply.github.com> 1791541779 +0800\ncommitter Codex <codex@users.noreply.github.com> 1791541779 +0800\n\nFreeze STAT-001 synthetic replication before experiments\n"
+    },
+    {
+      "local_sha": "ac3ccee412b07d5bc47e275419243c2c39a4435e",
+      "raw_commit_object": "tree 321f1beb586f7c506e714296e679693bca0d9275\nparent dc23c40a7bb6bd608e0c0ef88ea2a50c77de10f7\nauthor Codex <codex@users.noreply.github.com> 1791542058 +0800\ncommitter Codex <codex@users.noreply.github.com> 1791542058 +0800\n\nReplicate synthetic covariate-shift coverage with frozen controls\n"
+    },
+    {
+      "local_sha": "1a9f5b467254c87d78ee235031cd9c3b47946824",
+      "raw_commit_object": "tree fc9396e61b7f29d755743e2b5565e6917e45ce49\nparent ac3ccee412b07d5bc47e275419243c2c39a4435e\nauthor Codex <codex@users.noreply.github.com> 1791542123 +0800\ncommitter Codex <codex@users.noreply.github.com> 1791542123 +0800\n\nRecord independent finite-synthetic review and close bounded round\n"
+    },
+    {
+      "local_sha": "883e05c95393c4c4330a111e10049fde171c1429",
+      "raw_commit_object": "tree 8fd2430e661c153cac4402dc6cfa7cb508745158\nparent 1a9f5b467254c87d78ee235031cd9c3b47946824\nauthor Codex <codex@users.noreply.github.com> 1791542123 +0800\ncommitter Codex <codex@users.noreply.github.com> 1791542123 +0800\n\nSeal reproducibility artifact checksums\n"
+    }
+  ]
+}

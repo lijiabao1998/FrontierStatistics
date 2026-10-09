@@ -1,0 +1,6 @@
+Deliberate omission of test-point infinity mass gives 4
+Traceback (most recent call last):
+  File "<stdin>", line 5, in <module>
+AssertionError: DETECTED: mutant omitting test-point infinity atom violates frozen fixture
+expected_exit_code=1
+actual_exit_code=1

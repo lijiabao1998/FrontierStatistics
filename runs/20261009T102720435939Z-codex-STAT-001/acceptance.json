@@ -1,0 +1,105 @@
+{
+  "version": "stat001-synthetic-v1",
+  "task_kind": "REPLICATION",
+  "problem_id": "STAT-001",
+  "source_dgp": {
+    "x": "Bernoulli(0.1)",
+    "p": 0.1,
+    "y": "(1 + 3*x) * Normal(0,1)",
+    "sigma": [
+      1.0,
+      4.0
+    ]
+  },
+  "predictor": "mu(x)=0 fixed before all calibration/test data; no fitted model or tuning",
+  "estimand": "Marginal target coverage P(Y in C(X)), averaging over independent calibration sets and new target draws; not conditional or universal coverage.",
+  "assumptions": [
+    "source calibration iid",
+    "target draws iid and independent of calibration",
+    "known positive oracle target/source covariate ratio",
+    "same Y|X only in no_shift/covariate_mid/covariate_high",
+    "no missingness/interference/causal estimand"
+  ],
+  "scenarios": [
+    {
+      "name": "no_shift",
+      "target_p": 0.1,
+      "location": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "covariate_mid",
+      "target_p": 0.5,
+      "location": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "covariate_high",
+      "target_p": 0.9,
+      "location": 0.0,
+      "scale": 1.0
+    },
+    {
+      "name": "location_shift",
+      "target_p": 0.1,
+      "location": 4.0,
+      "scale": 1.0
+    },
+    {
+      "name": "conditional_scale",
+      "target_p": 0.9,
+      "location": 0.0,
+      "scale": 2.0
+    }
+  ],
+  "target_dgp": "X~Bernoulli(target_p); Y=location+scale*(1+3*X)*Normal(0,1)",
+  "methods": {
+    "vanilla": "absolute residual scores |Y|; quantile rank ceil((n+1)*(1-alpha)); infinity when rank>n",
+    "oracle_weighted": "weights w(x)=target_p/0.1 if x=1 else (1-target_p)/0.9; weighted (1-alpha) quantile of calibration scores plus test-point weight at +infinity",
+    "wrong_ratio": "deliberate misspecification: reciprocal of oracle weights, same infinity correction"
+  },
+  "alpha": 0.1,
+  "replications": 100,
+  "calibration_size": 500,
+  "test_size_per_scenario": 1000,
+  "master_seed": 202610091,
+  "seed_rule": "SHA256 of UTF-8 string master_seed:replication:stream, interpreted as big-endian integer; stream calibration or scenario name; Python random.Random",
+  "pairing": "Within replication use same source calibration and each scenario test sample for all methods. Independent replication seeds; no validation/tuning data used.",
+  "uncertainty": "Replicate-level mean +/- 1.9842169515086827 * sample_SD/sqrt(100), approximate pointwise 95% t intervals. Never treat all shared-calibration predictions as independent Bernoulli trials. Paired gaps use replicate differences.",
+  "outputs": [
+    "all 1500 per-replication/method/scenario rows",
+    "coverage/MCSE/95% CI",
+    "subgroup coverage/CI and group counts",
+    "mean width/CI and infinite interval rate",
+    "paired weighted-minus-vanilla gap/CI",
+    "point prediction bias, variance, RMSE diagnostics",
+    "effective sample size",
+    "input/code hashes and runtime versions",
+    "positive negative boundary and tamper logs"
+  ],
+  "acceptance": {
+    "controls": "All deterministic quantile/weights/invalid-input controls pass; deleting test-point infinity atom must fail its fixed boundary fixture; tampering one logged coverage count must be rejected.",
+    "no_shift": "vanilla coverage mean in [0.87,0.93]; weighted and vanilla exactly equal on all per-replication predictions",
+    "covariate_high_failure": "vanilla pointwise coverage CI upper < 0.85",
+    "covariate_high_repair": "oracle weighted CI lower > 0.87, CI upper < 0.95, mean interval width < 16, infinite-interval rate = 0 in this finite planned sample",
+    "conditional_limit": "oracle weighted coverage CI upper < 0.80 for conditional_scale and < 0.50 for location_shift",
+    "wrong_ratio": "wrong_ratio CI upper < 0.85 in covariate_high",
+    "failure_policy": "Retain any failed criterion, do not change parameters, seed or thresholds; report baseline incomplete if applicable."
+  },
+  "budget": {
+    "wall_minutes": 30,
+    "hard_stop_utc": "2026-10-09T10:55:41Z",
+    "usd": 0,
+    "max_trials": 100,
+    "trial_definition": "one independent calibration replicate with five frozen target scenarios (500 scenario-replicates total); deterministic unit tests are not stochastic search trials"
+  },
+  "not_claimed": [
+    "new theorem",
+    "novel method",
+    "solution of parent STAT-001",
+    "conditional/subgroup validity",
+    "estimated density ratio performance",
+    "deployment or causal conclusion",
+    "independent replication by author"
+  ]
+}
